@@ -1,10 +1,12 @@
+let customPrompt;
+
 function myFunction(buttonId) {
     // Text Options
-    if (buttonId == "disconnect") {
-        var copyandpaste = `Test
+    if (buttonId == "streamable") {
+        var copyandpaste =
+`Test
 String
-Multiline`
-
+Multiline`;
     } else if (buttonId == "2") {
         var copyandpaste = "> **Denied. Unusable Evidence Format / Invalid or no Video / Broken Link** \n" +
         "> \n" +
@@ -24,15 +26,13 @@ Multiline`
         "> **Please remake the ticket once evidence is in correct format**, Do **NOT** use streamable.com as the video expires itself and log archives is required. \n" +
         "> \n" +
         ">  https://docs.google.com/document/d/e/2PACX-1vQUwjgPHEqZ_Ok8N9x_cYv9jm27Ln2pcPepOPtuFFXk8rbkuShDlVADoTw_hIjwlNA0itXTa5-6R7Q6/pub";
-    } else if (buttonId == "3") {
-        var copyandpaste = "> **Denied. Player Tagged Crash** \n" +
-        "> \n" + 
-        "> B-IV. Safe Crashes \n" +
-        "> If a player unintentionally crashes or disconnects in the Depths†, has above 60% health††, and is **not combat tagged by a player**, they may be restored. \n" +
-        "> \n" +
-        "> ( Player tag from lingering crash is still not valid for restore) \n" +
-        "> \n" +
-        "> ... Our death logs indicate the exact amount of health you had when you died, which may be different than what we see on your screen. This is due to the fact that your character's body may linger in game for a moment before you leave. If our logs show that you actually had less than 60% health, then your restore will be denied. \n";
+    } else if (buttonId == "allies") {
+        console.log("Allies")
+        let customPrompt = prompt("Enter message you want player to say:");
+        var copyandpaste = 
+`> Hello!
+> Please go ingame and say "${customPrompt}"
+> Then I can restore you`;
     } else if (buttonId == "4") {
         var copyandpaste = "> **Denied. No Death screen / Death splash ID** \n" +
         "> \n" +
