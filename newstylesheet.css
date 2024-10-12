@@ -51,7 +51,7 @@ header nav li a:hover{
     border-radius: 10px;
     border-color: #B8895A;
     outline: 5px double;
-    outline-color: black;
+    outline-color: #423529;
     outline-offset: -5px;
     background-color: rgba(0, 0, 0, 0.250);
 }
