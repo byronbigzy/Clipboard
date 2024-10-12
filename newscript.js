@@ -31,7 +31,7 @@ Multiline`;
         let customPrompt = prompt("Enter message you want player to say:");
         var copyandpaste = 
 `> Hello!
-> Please go ingame and say "${customPrompt}"
+> Please go ingame and say \`${customPrompt}\`
 > Then I can restore you`;
     } else if (buttonId == "4") {
         var copyandpaste = "> **Denied. No Death screen / Death splash ID** \n" +
